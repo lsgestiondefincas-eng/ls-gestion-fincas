@@ -1,23 +1,28 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LS Gestión de Fincas - Administración Profesional de Comunidades</title>
-    <meta name="description" content="LS Gestión de Fincas ofrece servicios profesionales de administración de fincas, comunidades y propiedades. Solicite presupuesto gratuito y visita personal.">
-    <meta name="keywords" content="administración de fincas, gestión de comunidades, administrador de fincas, presupuesto administración fincas, gestión de propiedades">
+    <title>LS Gestión de Fincas | Administración de Comunidades Expertos en Málaga</title>
+    <meta name="description" content="LS Gestión de Fincas: Administración profesional de comunidades en Málaga. Mejoramos cualquier precio de su administrador actual. Servicio personalizado y cercano. ¡Solicite presupuesto sin compromiso!">
+    <meta name="keywords" content="administración de fincas Málaga, gestión de comunidades, administrador de fincas barato, presupuesto administración fincas, comunidad de vecinos, administración profesional fincas, mejor precio administración, administrador cercano Málaga">
+    <meta name="author" content="LS Gestión de Fincas">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         /* Variables CSS */
         :root {
-            --primary-color: #1e5c8a;
-            --secondary-color: #2a7f9e;
-            --accent-color: #f4b41a;
-            --light-color: #f8f9fa;
-            --dark-color: #343a40;
-            --gray-color: #6c757d;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            --border-radius: 8px;
+            --primary-color: #1a5c8c;
+            --secondary-color: #2c8aa0;
+            --accent-color: #f9b52a;
+            --light-color: #f8fafc;
+            --dark-color: #2d3748;
+            --gray-color: #718096;
+            --success-color: #38a169;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            --border-radius: 10px;
             --transition: all 0.3s ease;
         }
 
@@ -29,49 +34,54 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
             color: var(--dark-color);
-            background-color: #fff;
+            background-color: #ffffff;
+            overflow-x: hidden;
         }
 
-        h1, h2, h3, h4 {
-            margin-bottom: 1rem;
-            color: var(--primary-color);
+        h1, h2, h3, h4, h5 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
             line-height: 1.3;
+            margin-bottom: 1rem;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 2.3rem;
             text-align: center;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
             position: relative;
         }
 
         h2:after {
             content: '';
             display: block;
-            width: 80px;
+            width: 100px;
             height: 4px;
-            background-color: var(--accent-color);
-            margin: 0.5rem auto 0;
+            background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+            margin: 0.8rem auto;
+            border-radius: 2px;
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
 
         p {
-            margin-bottom: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
         }
 
         a {
             text-decoration: none;
             color: inherit;
+            transition: var(--transition);
         }
 
         ul {
@@ -91,52 +101,84 @@
         }
 
         section {
-            padding: 80px 0;
+            padding: 90px 0;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--gray-color);
+            max-width: 800px;
+            margin: 0 auto 3rem;
         }
 
         .btn {
             display: inline-block;
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
-            padding: 12px 30px;
-            border-radius: var(--border-radius);
+            padding: 15px 35px;
+            border-radius: 50px;
             font-weight: 600;
+            font-size: 1.05rem;
             border: none;
             cursor: pointer;
             transition: var(--transition);
             text-align: center;
-            font-size: 1rem;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 4px 12px rgba(26, 92, 140, 0.2);
         }
 
         .btn:hover {
-            background-color: var(--secondary-color);
             transform: translateY(-3px);
-            box-shadow: var(--shadow);
+            box-shadow: 0 6px 18px rgba(26, 92, 140, 0.3);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
         }
 
         .btn-accent {
-            background-color: var(--accent-color);
+            background: linear-gradient(135deg, var(--accent-color), #ff9d00);
             color: var(--dark-color);
         }
 
         .btn-accent:hover {
-            background-color: #e6a517;
+            background: linear-gradient(135deg, #ff9d00, var(--accent-color));
+            box-shadow: 0 6px 18px rgba(249, 181, 42, 0.3);
+        }
+
+        .btn-large {
+            padding: 18px 45px;
+            font-size: 1.15rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .highlight {
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .accent-text {
+            color: var(--accent-color);
         }
 
         /* Header y navegación */
         header {
-            background-color: white;
-            box-shadow: var(--shadow);
-            position: sticky;
+            background-color: rgba(255, 255, 255, 0.98);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            position: fixed;
             top: 0;
+            left: 0;
+            width: 100%;
             z-index: 1000;
+            transition: var(--transition);
         }
 
         .header-container {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 18px 0;
         }
 
         .logo {
@@ -146,42 +188,82 @@
         }
 
         .logo-img {
-            height: 60px;
+            height: 70px;
             width: auto;
-            background-color: #f0f0f0;
+            background-color: var(--primary-color);
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 5px;
-            padding: 5px;
+            border-radius: var(--border-radius);
+            padding: 12px;
             font-weight: bold;
-            color: var(--primary-color);
+            color: white;
+            box-shadow: var(--shadow);
         }
 
         .logo-text h1 {
             font-size: 1.8rem;
             margin-bottom: 0;
+            color: var(--primary-color);
         }
 
         .logo-text p {
             font-size: 0.9rem;
             color: var(--gray-color);
             margin-bottom: 0;
+            font-weight: 500;
         }
 
         nav ul {
             display: flex;
-            gap: 30px;
+            gap: 35px;
         }
 
         nav a {
             font-weight: 600;
             color: var(--dark-color);
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        nav a:after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
             transition: var(--transition);
         }
 
         nav a:hover {
             color: var(--primary-color);
+        }
+
+        nav a:hover:after {
+            width: 100%;
+        }
+
+        .phone-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: rgba(26, 92, 140, 0.1);
+            padding: 12px 22px;
+            border-radius: 50px;
+            font-weight: 700;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .phone-header:hover {
+            background-color: rgba(26, 92, 140, 0.15);
+        }
+
+        .phone-header i {
+            color: var(--accent-color);
+            font-size: 1.2rem;
         }
 
         .mobile-menu-btn {
@@ -195,24 +277,39 @@
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(30, 92, 138, 0.9), rgba(42, 127, 158, 0.9)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1473&q=80');
+            background: linear-gradient(rgba(26, 92, 140, 0.9), rgba(44, 138, 160, 0.9)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1473&q=80');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
-            padding: 120px 0;
+            padding: 180px 0 120px;
             text-align: center;
+            position: relative;
         }
 
         .hero h1 {
             color: white;
-            font-size: 3rem;
+            font-size: 3.2rem;
             margin-bottom: 1.5rem;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
         .hero p {
+            font-size: 1.3rem;
+            max-width: 850px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.95;
+        }
+
+        .hero-highlight {
+            background-color: rgba(249, 181, 42, 0.2);
+            padding: 5px 15px;
+            border-radius: 30px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: 700;
             font-size: 1.2rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
+            border-left: 4px solid var(--accent-color);
         }
 
         .hero-btns {
@@ -220,12 +317,68 @@
             gap: 20px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        /* Ventajas */
+        .advantages {
+            background-color: var(--light-color);
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .advantage-card {
+            background-color: white;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: var(--transition);
+            padding: 35px 30px;
+            text-align: center;
+            position: relative;
+            border-top: 4px solid var(--primary-color);
+        }
+
+        .advantage-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .advantage-icon {
+            font-size: 3.2rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        .advantage-card h3 {
+            margin-bottom: 15px;
+        }
+
+        .price-guarantee {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 50px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-top: 60px;
+            box-shadow: var(--shadow);
+        }
+
+        .price-guarantee h3 {
+            color: white;
+            font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         /* Servicios */
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
             margin-top: 40px;
         }
@@ -236,96 +389,140 @@
             box-shadow: var(--shadow);
             overflow: hidden;
             transition: var(--transition);
-            padding: 30px;
-            text-align: center;
+            height: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         .service-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-img img {
+            transform: scale(1.05);
+        }
+
+        .service-content {
+            padding: 30px;
         }
 
         .service-icon {
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--primary-color);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
-        /* Por qué elegirnos */
-        .why-us {
+        .service-list {
+            margin-top: 20px;
+        }
+
+        .service-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .service-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        /* Formulario de contacto */
+        .contact {
             background-color: var(--light-color);
         }
 
-        .why-content {
+        .contact-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+            align-items: start;
         }
 
-        .why-item {
-            text-align: center;
-            padding: 25px;
-            background-color: white;
+        .contact-info {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 40px;
             border-radius: var(--border-radius);
             box-shadow: var(--shadow);
         }
 
-        .why-icon {
-            font-size: 2.5rem;
-            color: var(--accent-color);
-            margin-bottom: 15px;
-        }
-
-        /* Contacto y CTA */
-        .contact-cta {
-            background-color: var(--primary-color);
+        .contact-info h3 {
             color: white;
-            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
         }
 
-        .contact-cta h2 {
-            color: white;
-        }
-
-        .contact-cta h2:after {
-            background-color: var(--accent-color);
-        }
-
-        .contact-info {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-            margin: 40px 0;
+        .contact-details {
+            margin-bottom: 30px;
         }
 
         .contact-item {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 25px;
         }
 
         .contact-icon {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
+            color: var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .contact-text h4 {
+            color: white;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .contact-text p, .contact-text a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-text a:hover {
             color: var(--accent-color);
         }
 
-        .phone-number {
+        .phone-large {
             font-size: 1.8rem;
             font-weight: 700;
             color: white;
             background-color: rgba(255, 255, 255, 0.1);
-            padding: 10px 20px;
+            padding: 15px 25px;
             border-radius: var(--border-radius);
             display: inline-block;
-            margin: 20px 0;
+            margin-top: 10px;
+            transition: var(--transition);
         }
 
-        /* Formulario */
+        .phone-large:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
         .contact-form-container {
-            max-width: 600px;
-            margin: 0 auto;
             background-color: white;
             padding: 40px;
             border-radius: var(--border-radius);
@@ -334,11 +531,16 @@
 
         .contact-form-container h3 {
             color: var(--primary-color);
-            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .form-intro {
+            color: var(--gray-color);
+            margin-bottom: 30px;
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .form-group label {
@@ -350,18 +552,20 @@
 
         .form-control {
             width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
+            padding: 15px 20px;
+            border: 1px solid #e2e8f0;
             border-radius: var(--border-radius);
-            font-family: inherit;
+            font-family: 'Poppins', sans-serif;
             font-size: 1rem;
             transition: var(--transition);
+            background-color: #f8fafc;
         }
 
         .form-control:focus {
             border-color: var(--primary-color);
             outline: none;
-            box-shadow: 0 0 0 3px rgba(30, 92, 138, 0.2);
+            box-shadow: 0 0 0 3px rgba(26, 92, 140, 0.1);
+            background-color: white;
         }
 
         textarea.form-control {
@@ -369,18 +573,24 @@
             resize: vertical;
         }
 
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
         /* Footer */
         footer {
             background-color: var(--dark-color);
             color: white;
-            padding: 60px 0 30px;
+            padding: 70px 0 30px;
         }
 
         .footer-content {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .footer-logo .logo-img {
@@ -390,39 +600,94 @@
 
         .footer-logo h3 {
             color: white;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .footer-logo p {
+            color: rgba(255, 255, 255, 0.7);
         }
 
         .footer-links h4, .footer-services h4 {
             color: white;
             margin-bottom: 20px;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h4:after, .footer-services h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-color);
         }
 
         .footer-links ul li, .footer-services ul li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+        }
+
+        .footer-links a, .footer-services a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: var(--transition);
         }
 
         .footer-links a:hover, .footer-services a:hover {
             color: var(--accent-color);
+            padding-left: 5px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
         }
 
         .copyright {
             text-align: center;
             padding-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.95rem;
         }
 
         /* Responsive */
-        @media (max-width: 992px) {
+        @media (max-width: 1100px) {
             h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
             
             h2 {
-                font-size: 1.8rem;
+                font-size: 2rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .phone-header {
+                display: none;
             }
             
             .hero h1 {
@@ -430,7 +695,12 @@
             }
             
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
             }
         }
 
@@ -441,16 +711,17 @@
             
             nav {
                 position: fixed;
-                top: 90px;
+                top: 106px;
                 left: 0;
                 width: 100%;
                 background-color: white;
-                box-shadow: var(--shadow);
-                padding: 20px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                padding: 30px;
                 transform: translateY(-100%);
                 opacity: 0;
                 visibility: hidden;
                 transition: var(--transition);
+                border-top: 1px solid #eee;
             }
             
             nav.active {
@@ -461,7 +732,7 @@
             
             nav ul {
                 flex-direction: column;
-                gap: 15px;
+                gap: 25px;
             }
             
             .header-container {
@@ -469,11 +740,15 @@
             }
             
             .hero {
-                padding: 80px 0;
+                padding: 160px 0 100px;
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
             }
             
             .hero-btns {
@@ -483,15 +758,15 @@
             
             .hero-btns .btn {
                 width: 100%;
-                max-width: 300px;
+                max-width: 350px;
             }
             
             section {
-                padding: 60px 0;
+                padding: 70px 0;
             }
             
-            .contact-form-container {
-                padding: 30px 20px;
+            .contact-form-container, .contact-info {
+                padding: 30px;
             }
         }
 
@@ -500,13 +775,20 @@
                 font-size: 1.5rem;
             }
             
-            .phone-number {
-                font-size: 1.5rem;
-                padding: 8px 15px;
+            .hero h1 {
+                font-size: 2rem;
             }
             
-            .contact-info {
-                flex-direction: column;
+            .hero-highlight {
+                font-size: 1rem;
+            }
+            
+            .phone-large {
+                font-size: 1.5rem;
+                padding: 12px 20px;
+            }
+            
+            .contact-container {
                 gap: 30px;
             }
         }
@@ -516,39 +798,88 @@
     <!-- Header con navegación -->
     <header>
         <div class="container header-container">
-            <div class="logo" style="gap: 10px;">
-    			<div style="height: 70px; display: flex; align-items: center;">
-        			<img src="logo.png" alt="LS Gestión de Fincas" style="height: 60px; width: auto;">
-    			</div>
-    		<div class="logo-text">
-       			 <h1>LS Gestión de Fincas</h1>
-       			 <p>Administración profesional de comunidades</p>
-   		 </div>
-
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="logo">
+                <div class="logo-img">
+                    <!-- Logo de la empresa -->
+                    <span>LS</span>
+                </div>
+                <div class="logo-text">
+                    <h1>LS Gestión de Fincas</h1>
+                    <p>Administración profesional de comunidades</p>
+                </div>
+            </div>
             
             <nav id="mainNav">
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#ventajas">Ventajas</a></li>
                     <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#nosotros">Por qué elegirnos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
+            
+            <div class="phone-header">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:628646685">628 646 685</a>
+            </div>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <!-- Sección Hero -->
     <section class="hero" id="inicio">
         <div class="container">
-            <h1>Expertos en Administración de Fincas y Comunidades</h1>
-            <p>Gestionamos su propiedad con profesionalidad, transparencia y dedicación. Ofrecemos soluciones integrales para comunidades de vecinos y propiedades privadas.</p>
+            <div class="hero-highlight">
+                <span class="accent-text">¡MEJORAMOS CUALQUIER PRECIO!</span> de su administrador actual
+            </div>
+            <h1>Administración de Fincas Expertos en Almeria</h1>
+            <p>En <span class="highlight">LS Gestión de Fincas</span> ofrecemos un servicio <span class="accent-text">personal, cercano y profesional</span> para la administración de su comunidad. <strong>Nos encargamos de todo</strong> para que usted solo tenga que preocuparse de disfrutar de su hogar.</p>
             <div class="hero-btns">
-                <a href="#contacto" class="btn">Solicitar Presupuesto</a>
-                <a href="tel:628646685" class="btn btn-accent">Llamar Ahora</a>
+                <a href="#contacto" class="btn btn-large">Solicitar Presupuesto Gratis</a>
+                <a href="tel:628646685" class="btn btn-accent btn-large"><i class="fas fa-phone-alt"></i> Llamar Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Ventajas -->
+    <section class="advantages" id="ventajas">
+        <div class="container">
+            <h2>¿Por Qué Elegir LS Gestión de Fincas?</h2>
+            <p class="section-subtitle">Somos la alternativa perfecta para su comunidad: ofrecemos el mejor servicio al precio más competitivo del mercado de administración de fincas en Málaga.</p>
+            
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Trato Personal y Cercano</h3>
+                    <p>Conocemos personalmente a cada vecino y nos adaptamos a las necesidades específicas de su comunidad. Siempre disponible para resolver dudas.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Mejoramos Cualquier Precio</h3>
+                    <p>¿Paga demasiado a su administrador actual? <strong>Garantizamos una mejora en el precio</strong> manteniendo la máxima calidad en el servicio.</p>
+                </div>
+                
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Profesionalidad Garantizada</h3>
+                    <p>Contamos con amplia experiencia en administración de fincas, gestión de comunidades y asesoramiento legal para propietarios.</p>
+                </div>
+            </div>
+            
+            <div class="price-guarantee">
+                <h3>¡Garantía de Mejor Precio!</h3>
+                <p>Traiga la última factura de su administrador actual y <strong>mejoraremos el precio sin comprometer la calidad del servicio</strong>. Atención personalizada 24/7 para emergencias.</p>
+                <a href="#contacto" class="btn btn-accent btn-large" style="margin-top: 20px;">Solicitar Comparativa Gratis</a>
             </div>
         </div>
     </section>
@@ -556,173 +887,192 @@
     <!-- Sección Servicios -->
     <section id="servicios">
         <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto 20px; text-align: center;">Ofrecemos una amplia gama de servicios para la gestión integral de su finca o comunidad de propietarios.</p>
+            <h2>Servicios de Administración de Fincas</h2>
+            <p class="section-subtitle">Ofrecemos una gestión integral y profesional para su comunidad de propietarios en Almería. <strong>Nos encargamos de todo</strong> para su tranquilidad.</p>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-file-invoice-dollar"></i>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gestión económica de fincas">
                     </div>
-                    <h3>Gestión Económica y Contable</h3>
-                    <p>Control presupuestario, elaboración de cuentas, gestión de cobros, pagos a proveedores y presentación de impuestos.</p>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                        </div>
+                        <h3>Gestión Económica Completa</h3>
+                        <p>Control presupuestario, elaboración de cuentas, gestión de cobros y pagos, presentación de impuestos y asesoramiento fiscal.</p>
+                        <ul class="service-list">
+                            <li>Control de presupuestos y cuentas</li>
+                            <li>Gestión de cobro de derramas</li>
+                            <li>Pago a proveedores y servicios</li>
+                            <li>Presentación de impuestos</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-tools"></i>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Mantenimiento de comunidades">
                     </div>
-                    <h3>Mantenimiento y Conservación</h3>
-                    <p>Coordinación de reparaciones, contratación de servicios, supervisión de trabajos y mantenimiento preventivo.</p>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Mantenimiento y Reparaciones</h3>
+                        <p>Coordinación de reparaciones, contratación de servicios, supervisión de trabajos y mantenimiento preventivo de instalaciones.</p>
+                        <ul class="service-list">
+                            <li>Coordinación de reparaciones urgentes</li>
+                            <li>Mantenimiento preventivo</li>
+                            <li>Contratación de servicios profesionales</li>
+                            <li>Supervisión de trabajos</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-gavel"></i>
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Asesoramiento legal comunidades">
                     </div>
-                    <h3>Asesoramiento Legal</h3>
-                    <p>Asesoramiento en cumplimiento normativo, procedimientos de junta, redacción de actas y resolución de conflictos.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-friends"></i>
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-gavel"></i>
+                        </div>
+                        <h3>Asesoramiento Legal Integral</h3>
+                        <p>Asesoramiento en cumplimiento normativo, redacción de actas, convocatoria de juntas y resolución de conflictos entre vecinos.</p>
+                        <ul class="service-list">
+                            <li>Cumplimiento de la LPH y normativas</li>
+                            <li>Redacción y custodia de actas</li>
+                            <li>Convocatoria de juntas de propietarios</li>
+                            <li>Resolución de conflictos vecinales</li>
+                        </ul>
                     </div>
-                    <h3>Gestión de Comunicación</h3>
-                    <p>Comunicación con propietarios, convocatoria de juntas, atención de consultas y resolución de incidencias.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3>Inspecciones y Seguros</h3>
-                    <p>Inspecciones periódicas, gestión de pólizas de seguro, asesoramiento en medidas de seguridad y prevención.</p>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Optimización de Costes</h3>
-                    <p>Análisis de gastos, negociación con proveedores, búsqueda de alternativas eficientes y reducción de costes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Por qué elegirnos -->
-    <section class="why-us" id="nosotros">
+    <!-- Sección Contacto -->
+    <section class="contact" id="contacto">
         <div class="container">
-            <h2>¿Por qué elegir LS Gestión de Fincas?</h2>
-            <p class="text-center" style="max-width: 800px; margin: 0 auto 20px; text-align: center;">Somos su mejor opción para la administración de su comunidad gracias a nuestra experiencia, dedicación y compromiso.</p>
+            <h2>Solicite Presupuesto Sin Compromiso</h2>
+            <p class="section-subtitle">Contáctenos para una <strong>visita personalizada y gratuita</strong>. Mejoraremos cualquier oferta de su administrador actual con un servicio más cercano y profesional.</p>
             
-            <div class="why-content">
-                <div class="why-item">
-                    <div class="why-icon">
-                        <i class="fas fa-award"></i>
-                    </div>
-                    <h3>Experiencia y Profesionalidad</h3>
-                    <p>Más de 15 años de experiencia en el sector nos avalan. Nuestro equipo está formado por profesionales cualificados.</p>
-                </div>
-                
-                <div class="why-item">
-                    <div class="why-icon">
-                        <i class="fas fa-handshake"></i>
-                    </div>
-                    <h3>Compromiso y Transparencia</h3>
-                    <p>Priorizamos la comunicación clara y la transparencia en todas nuestras gestiones. Usted siempre estará informado.</p>
-                </div>
-                
-                <div class="why-item">
-                    <div class="why-icon">
-                        <i class="fas fa-bolt"></i>
-                    </div>
-                    <h3>Rapidez y Eficiencia</h3>
-                    <p>Resolvemos incidencias con agilidad y optimizamos los procesos para ofrecer un servicio eficiente y de calidad.</p>
-                </div>
-                
-                <div class="why-item">
-                    <div class="why-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
-                    <h3>Atención Personalizada</h3>
-                    <p>Cada comunidad es única. Ofrecemos soluciones adaptadas a sus necesidades específicas y atención directa.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Contacto y CTA -->
-    <section class="contact-cta" id="contacto">
-        <div class="container">
-            <h2>Contacte con Nosotros</h2>
-            <p style="max-width: 800px; margin: 0 auto 20px; text-align: center; font-size: 1.2rem;">Solicite una visita personal sin compromiso para conocer nuestras soluciones de gestión adaptadas a su comunidad.</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone-alt"></i>
-                    </div>
-                    <h3>Teléfono</h3>
-                    <a href="tel:628646685" class="phone-number">628 646 685</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>Horario de atención</h3>
-                    <p>Lunes a Viernes: 9:00 - 14:00 y 16:00 - 19:00</p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <h3>Zona de actuación</h3>
-                    <p>Toda la provincia. Visitas personales sin coste adicional.</p>
-                </div>
-            </div>
-            
-            <div class="contact-form-container">
-                <h3>Solicite presupuesto sin compromiso</h3>
-                <p style="text-align: center; margin-bottom: 30px; color: var(--gray-color);">Complete el formulario y nos pondremos en contacto con usted para ofrecerle una visita personalizada.</p>
-                
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nombre completo *</label>
-                        <input type="text" id="name" class="form-control" required>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contacte con Nosotros</h3>
+                    <p style="opacity: 0.9; margin-bottom: 30px;">Estamos aquí para ayudarle con la gestión de su comunidad de propietarios en Almería.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Teléfono</h4>
+                                <a href="tel:628646685" class="phone-large">628 646 685</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <a href="mailto:lsgestiondefincas@gmail.com">lsgestiondefincas@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horario de Atención</h4>
+                                <p>Lunes a Viernes: 9:00 - 14:00 / 16:00 - 19:00</p>
+                                <p>Atención de emergencias 24/7</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Zona de Actuación</h4>
+                                <p>Toda la provincia de Almería y áreas limítrofes</p>
+                                <p>Visitas personales sin coste adicional</p>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="form-group">
-                        <label for="phone">Teléfono *</label>
-                        <input type="tel" id="phone" class="form-control" required>
+                    <div style="margin-top: 30px;">
+                        <p style="opacity: 0.9; font-size: 1.1rem;"><strong>¡Llámenos hoy mismo!</strong> Le atenderemos personalmente para resolver sus dudas.</p>
                     </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Solicite Presupuesto Gratuito</h3>
+                    <p class="form-intro">Complete el formulario y nos pondremos en contacto con usted para ofrecerle un <strong>presupuesto personalizado</strong> y una <strong>visita sin compromiso</strong>.</p>
                     
-                    <div class="form-group">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" class="form-control">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="property">Tipo de propiedad/comunidad</label>
-                        <select id="property" class="form-control">
-                            <option value="">Seleccione una opción</option>
-                            <option value="comunidad">Comunidad de vecinos</option>
-                            <option value="finca">Finca urbana</option>
-                            <option value="urbanizacion">Urbanización</option>
-                            <option value="otro">Otro</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Información adicional o consulta</label>
-                        <textarea id="message" class="form-control" placeholder="Indique el número de viviendas, servicios requeridos, o cualquier información relevante..."></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn" style="width: 100%;">Solicitar Presupuesto y Visita Personal</button>
-                </form>
+                    <form id="contactForm" action="https://formspree.io/f/xvojorjd" method="POST">
+                        <input type="hidden" name="_subject" value="Nueva solicitud de presupuesto - LS Gestión de Fincas">
+                        <input type="hidden" name="_replyto" value="lsgestiondefincas@gmail.com">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="property">Tipo de propiedad *</label>
+                            <select id="property" name="property" class="form-control" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="comunidad">Comunidad de vecinos</option>
+                                <option value="finca">Finca urbana</option>
+                                <option value="urbanizacion">Urbanización</option>
+                                <option value="chalet">Comunidad de chalets</option>
+                                <option value="otro">Otro tipo</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="viviendas">Número de viviendas/locales *</label>
+                            <input type="number" id="viviendas" name="viviendas" class="form-control" min="1" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="current-admin">¿Tiene administrador actual?</label>
+                            <select id="current-admin" name="current-admin" class="form-control">
+                                <option value="">Seleccione</option>
+                                <option value="si">Sí, quiero comparar precios</option>
+                                <option value="no">No, es una nueva comunidad</option>
+                                <option value="cambio">Sí, quiero cambiar de administrador</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Información adicional o consulta</label>
+                            <textarea id="message" name="message" class="form-control" placeholder="Indique servicios específicos que necesita, problemas actuales, o cualquier información relevante..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%; padding: 18px;">
+                            <i class="fas fa-paper-plane"></i> Solicitar Presupuesto y Visita Personal
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
@@ -734,46 +1084,52 @@
                 <div class="footer-logo">
                     <div class="logo">
                         <div class="logo-img">
-                            <i class="fas fa-building"></i>
+                            <span>LS</span>
                         </div>
                         <div class="logo-text">
                             <h3>LS Gestión de Fincas</h3>
                             <p>Administración profesional de comunidades</p>
                         </div>
                     </div>
-                    <p style="margin-top: 15px;">Expertos en la gestión integral de fincas y comunidades de propietarios con más de 15 años de experiencia en el sector.</p>
+                    <p style="margin-top: 15px; color: rgba(255, 255, 255, 0.7);">Expertos en la gestión integral de fincas y comunidades de propietarios en Almería. Servicio personalizado al mejor precio garantizado.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-links">
-                    <h4>Enlaces rápidos</h4>
+                    <h4>Enlaces Rápidos</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#nosotros">Por qué elegirnos</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#ventajas">¿Por Qué Elegirnos?</a></li>
+                        <li><a href="#servicios">Nuestros Servicios</a></li>
+                        <li><a href="#contacto">Solicitar Presupuesto</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-services">
-                    <h4>Nuestros servicios</h4>
+                    <h4>Nuestros Servicios</h4>
                     <ul>
-                        <li><a href="#servicios">Gestión económica</a></li>
-                        <li><a href="#servicios">Mantenimiento</a></li>
-                        <li><a href="#servicios">Asesoramiento legal</a></li>
-                        <li><a href="#servicios">Optimización de costes</a></li>
+                        <li><a href="#servicios">Gestión económica y contable</a></li>
+                        <li><a href="#servicios">Mantenimiento y reparaciones</a></li>
+                        <li><a href="#servicios">Asesoramiento legal integral</a></li>
+                        <li><a href="#servicios">Administración completa</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
                     <h4>Contacto</h4>
                     <p><i class="fas fa-phone-alt" style="margin-right: 10px;"></i> <a href="tel:628646685">628 646 685</a></p>
+                    <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> <a href="mailto:lsgestiondefincas@gmail.com">lsgestiondefincas@gmail.com</a></p>
                     <p><i class="fas fa-clock" style="margin-right: 10px;"></i> L-V: 9:00-14:00 / 16:00-19:00</p>
-                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Toda la provincia</p>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> Almería y provincia</p>
                 </div>
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 LS Gestión de Fincas. Todos los derechos reservados.</p>
+                <p>&copy; 2023 LS Gestión de Fincas. Todos los derechos reservados. | Especialistas en administración de comunidades y fincas en Almería</p>
             </div>
         </div>
     </footer>
@@ -799,24 +1155,26 @@
             });
         });
         
-        // Manejo del formulario
+        // Manejo del formulario con Formspree
         const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Aquí normalmente se enviaría el formulario a un servidor
-            // Por ahora simularemos el envío
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('phone').value;
-            
-            alert(`¡Gracias ${name}! Hemos recibido su solicitud. Nos pondremos en contacto con usted en el teléfono ${phone} en las próximas 24 horas para concertar una visita personal sin compromiso.`);
-            
-            // Resetear formulario
-            contactForm.reset();
-            
-            // Desplazar al inicio del formulario
-            document.querySelector('#contacto').scrollIntoView({behavior: 'smooth'});
-        });
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                // Validación antes de enviar
+                const name = document.getElementById('name').value;
+                const phone = document.getElementById('phone').value;
+                
+                if (!name || !phone) {
+                    alert('Por favor, complete al menos los campos de nombre y teléfono.');
+                    e.preventDefault();
+                    return;
+                }
+                
+                // Mostrar mensaje de confirmación
+                alert(`¡Gracias ${name}! Su solicitud se está enviando. Nos pondremos en contacto con usted en el teléfono ${phone} en las próximas 24 horas para ofrecerle un presupuesto personalizado y concertar una visita.`);
+                
+                // El formulario se enviará automáticamente a Formspree
+            });
+        }
         
         // Smooth scrolling para enlaces internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -829,12 +1187,25 @@
                 const targetElement = document.querySelector(targetId);
                 if(targetElement) {
                     window.scrollTo({
-                        top: targetElement.offsetTop - 80,
+                        top: targetElement.offsetTop - 100,
                         behavior: 'smooth'
                     });
                 }
             });
         });
+        
+        // Cambiar estilo del header al hacer scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            } else {
+                header.style.boxShadow = '0 2px 15px rgba(0, 0, 0, 0.05)';
+                header.style.background = 'rgba(255, 255, 255, 0.98)';
+            }
+        });
     </script>
 </body>
 </html>
+
