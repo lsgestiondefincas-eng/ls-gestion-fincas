@@ -516,16 +516,15 @@
     <!-- Header con navegación -->
     <header>
         <div class="container header-container">
-            <div class="logo">
-                <div class="logo-img">
-                    <!-- Espacio para el logo -->
-                    <i class="fas fa-building"></i>
-                </div>
-                <div class="logo-text">
-                    <h1>LS Gestión de Fincas</h1>
-                    <p>Administración profesional de comunidades</p>
-                </div>
-            </div>
+            <div class="logo" style="gap: 10px;">
+    			<div style="height: 70px; display: flex; align-items: center;">
+        			<img src="logo.png" alt="LS Gestión de Fincas" style="height: 60px; width: auto;">
+    			</div>
+    		<div class="logo-text">
+       			 <h1>LS Gestión de Fincas</h1>
+       			 <p>Administración profesional de comunidades</p>
+   		 </div>
+
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
                 <i class="fas fa-bars"></i>
@@ -690,7 +689,7 @@
                 <h3>Solicite presupuesto sin compromiso</h3>
                 <p style="text-align: center; margin-bottom: 30px; color: var(--gray-color);">Complete el formulario y nos pondremos en contacto con usted para ofrecerle una visita personalizada.</p>
                 
-                <form action="mailto:lsgestiondefincas@gmail.com" method="post" enctype="text/plain">
+                <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Nombre completo *</label>
                         <input type="text" id="name" class="form-control" required>
@@ -722,9 +721,7 @@
                         <textarea id="message" class="form-control" placeholder="Indique el número de viviendas, servicios requeridos, o cualquier información relevante..."></textarea>
                     </div>
                     
-                    
-<button type="submit" class="btn" style="width: 100%;">Solicitar Presupuesto y Visita Personal</button>
-			<form action="mailto:tucorreo@gmail.com" method="post" enctype="text/plain">
+                    <button type="submit" class="btn" style="width: 100%;">Solicitar Presupuesto y Visita Personal</button>
                 </form>
             </div>
         </div>
@@ -737,9 +734,8 @@
                 <div class="footer-logo">
                     <div class="logo">
                         <div class="logo-img">
-    				<img src="images/tu-logo.png" alt="LS Gestión de Fincas">
-			</div>
-                        
+                            <i class="fas fa-building"></i>
+                        </div>
                         <div class="logo-text">
                             <h3>LS Gestión de Fincas</h3>
                             <p>Administración profesional de comunidades</p>
@@ -804,22 +800,23 @@
         });
         
         // Manejo del formulario
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    // NO PREVENIMOS el comportamiento por defecto
-    // El formulario se enviará por email
-    
-    const name = document.getElementById('name').value;
-    const phone = document.getElementById('phone').value;
-    const email = document.getElementById('email').value;
-    const property = document.getElementById('property').value;
-    const message = document.getElementById('message').value;
-    
-    // Añadimos un pequeño retraso para mostrar el mensaje
-    setTimeout(() => {
-        alert(`¡Gracias ${name}! Su solicitud se ha enviado correctamente. Revisaremos su petición y le contactaremos en el teléfono ${phone} en las próximas 24 horas para concertar una visita personal sin compromiso.`);
-    }, 500);
-});
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Aquí normalmente se enviaría el formulario a un servidor
+            // Por ahora simularemos el envío
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            
+            alert(`¡Gracias ${name}! Hemos recibido su solicitud. Nos pondremos en contacto con usted en el teléfono ${phone} en las próximas 24 horas para concertar una visita personal sin compromiso.`);
+            
+            // Resetear formulario
+            contactForm.reset();
+            
+            // Desplazar al inicio del formulario
+            document.querySelector('#contacto').scrollIntoView({behavior: 'smooth'});
+        });
         
         // Smooth scrolling para enlaces internos
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
